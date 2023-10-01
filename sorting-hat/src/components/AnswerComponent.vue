@@ -1,6 +1,6 @@
 <template>
   <el-col class="answer-container">
-    <el-row class="answer">{{ answer }}</el-row>
+    <el-row class="answer"><span class="text-border">{{ answer }}</span></el-row>
   </el-col>
 </template>
 
@@ -25,8 +25,14 @@ export default {
   justify-content: flex-start;
 }
 
-.answer, .answer {
+.answer {
   display: flex;
   justify-content: flex-start
+}
+
+.text-border {
+  border: solid 1px;
+  padding: 10px;
+  border-radius: 30px 30px 30px 0
 }
 </style>
