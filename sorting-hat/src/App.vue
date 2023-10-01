@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
+  <el-col id="app">
     <SelectionChat />
-  </div>
+  </el-col>
 </template>
 
 <script>
@@ -16,4 +16,20 @@ export default {
 </script>
 
 <style>
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#app {
+  width: 50%;
+  height: 50%;
+}
 </style>
