@@ -1,19 +1,67 @@
 <template>
-  <div class="hello">
-    <div v-for="question in questions" :key="question.title">
-      <span>{{ question.title }}</span>
-    </div>
-  </div>
+  <el-col class="selection-chat-container">
+    <el-row class="chat-container" ref="chatContainer" v-for="question in questions" :key="question.title">
+      <QuestionComponent :question="question"/>
+    </el-row>
+    <el-row class="answer-input-container">
+      <el-input
+        class="answer-input"
+        placeholder=""
+        suffix-icon="el-icon-position"
+        v-model="asnwer"
+        @change="onEnter">
+      </el-input>
+    </el-row>
+  </el-col>
 </template>
 
 <script>
 import seeds from '../assets/sorting_hat.json'
+import QuestionComponent from '../components/QuestionComponent.vue'
+//import Vue from 'vue'
 
 export default {
   name: 'SelectionChat',
+  components: {
+    QuestionComponent,
+  },
+  mounted() {
+    this.questions.push(seeds[0])
+  },
   data () {
     return {
-      questions: seeds
+      questionsList: seeds,
+      questionIndex: 0,
+      questions: [],
+      asnwer: '',
+      scores: undefined,
+      houses: {
+        g: 0,
+        h: 0,
+        r: 0,
+        s: 0
+      }
+    }
+  },
+  methods: {
+    onEnter() {
+      const actualQuestion = this.questionsList[this.questionIndex]
+      actualQuestion.answers.forEach(answer => {
+        let testAnswer = answer.title.toLowerCase()
+        let userAnswer = this.asnwer.toLowerCase()
+        if (testAnswer === userAnswer) {
+          this.scores = answer.scores
+          this.answer = ''
+          this.houses.g += this.scores.g
+          this.houses.h += this.scores.h
+          this.houses.r += this.scores.r
+          this.houses.s += this.scores.s
+          this.questionIndex++
+          this.questions.push(this.questionsList[this.questionIndex])
+        } else {
+          return ''
+        }
+      })
     }
   }
 }
@@ -21,4 +69,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.answer-input-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.answer-input {
+  width: 40%;
+  margin: 5px
+}
 </style>
