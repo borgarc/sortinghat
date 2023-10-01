@@ -29,7 +29,10 @@ body {
 }
 
 #app {
+  border: solid 1px;
   width: 50%;
   height: 50%;
+  overflow-y: scroll;
+  overflow-x: hidden
 }
 </style>
