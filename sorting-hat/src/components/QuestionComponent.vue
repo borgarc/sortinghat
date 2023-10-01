@@ -1,8 +1,8 @@
 <template>
   <el-col class="question-container">
-    <el-row class="question">{{ question.title }}</el-row>
+    <el-row class="question"><span class="text-border">{{ question.title }}</span></el-row>
     <el-row v-for="answers in question.answers" :key="answers.title">
-      <el-col v-if="question.answers.length > 2" class="answer">{{ answers.title }}</el-col>
+      <el-col v-if="question.answers.length > 2" class="answer"><span class="text-border">{{ answers.title }}</span></el-col>
     </el-row>
   </el-col>
 </template>
@@ -30,6 +30,13 @@ export default {
 
 .answer, .question {
   display: flex;
-  justify-content: flex-end
+  justify-content: flex-end;
+  margin: 10px
+}
+
+.text-border {
+  border: solid 1px;
+  padding: 10px;
+  border-radius: 30px 30px 0 30px
 }
 </style>
