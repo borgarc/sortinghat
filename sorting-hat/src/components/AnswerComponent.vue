@@ -27,7 +27,8 @@ export default {
 
 .answer {
   display: flex;
-  justify-content: flex-start
+  justify-content: flex-start;
+  margin: 10px;
 }
 
 .text-border {
