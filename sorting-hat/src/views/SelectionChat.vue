@@ -2,7 +2,7 @@
   <el-col class="selection-chat-container">
     <el-row class="chat-container" ref="chatContainer" v-for="(question, index) in questions" :key="question.title">
       <QuestionComponent :question="question"/>
-      <AnswerComponent :answer="selectedAnswer[index]" />
+      <AnswerComponent v-if="selectedAnswer[index] !== undefined" :answer="selectedAnswer[index]" />
     </el-row>
     <el-row class="answer-input-container">
       <el-input
