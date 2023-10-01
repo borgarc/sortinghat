@@ -8,7 +8,7 @@
         class="answer-input"
         placeholder=""
         suffix-icon="el-icon-position"
-        v-model="asnwer"
+        v-model="answer"
         @change="onEnter">
       </el-input>
     </el-row>
@@ -33,7 +33,7 @@ export default {
       questionsList: seeds,
       questionIndex: 0,
       questions: [],
-      asnwer: '',
+      answer: '',
       scores: undefined,
       houses: {
         g: 0,
@@ -48,7 +48,7 @@ export default {
       const actualQuestion = this.questionsList[this.questionIndex]
       actualQuestion.answers.forEach(answer => {
         let testAnswer = answer.title.toLowerCase()
-        let userAnswer = this.asnwer.toLowerCase()
+        let userAnswer = this.answer.toLowerCase()
         if (testAnswer === userAnswer) {
           this.scores = answer.scores
           this.answer = ''
