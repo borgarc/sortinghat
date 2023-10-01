@@ -1,14 +1,15 @@
 <template>
   <el-col class="selection-chat-container">
-    <el-row class="chat-container" ref="chatContainer" v-for="question in questions" :key="question.title">
+    <el-row class="chat-container" ref="chatContainer" v-for="(question, index) in questions" :key="question.title">
       <QuestionComponent :question="question"/>
+      <AnswerComponent :answer="selectedAnswer[index]" />
     </el-row>
     <el-row class="answer-input-container">
       <el-input
         class="answer-input"
         placeholder=""
         suffix-icon="el-icon-position"
-        v-model="asnwer"
+        v-model="answer"
         @change="onEnter">
       </el-input>
     </el-row>
@@ -18,12 +19,13 @@
 <script>
 import seeds from '../assets/sorting_hat.json'
 import QuestionComponent from '../components/QuestionComponent.vue'
-//import Vue from 'vue'
+import AnswerComponent from '../components/AnswerComponent.vue'
 
 export default {
   name: 'SelectionChat',
   components: {
     QuestionComponent,
+    AnswerComponent
   },
   mounted() {
     this.questions.push(seeds[0])
@@ -33,7 +35,8 @@ export default {
       questionsList: seeds,
       questionIndex: 0,
       questions: [],
-      asnwer: '',
+      answer: '',
+      selectedAnswer: [],
       scores: undefined,
       houses: {
         g: 0,
@@ -48,9 +51,10 @@ export default {
       const actualQuestion = this.questionsList[this.questionIndex]
       actualQuestion.answers.forEach(answer => {
         let testAnswer = answer.title.toLowerCase()
-        let userAnswer = this.asnwer.toLowerCase()
+        let userAnswer = this.answer.toLowerCase()
         if (testAnswer === userAnswer) {
           this.scores = answer.scores
+          this.selectedAnswer.push(this.answer)
           this.answer = ''
           this.houses.g += this.scores.g
           this.houses.h += this.scores.h
