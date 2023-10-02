@@ -4,7 +4,7 @@
       <QuestionComponent :question="question"/>
       <AnswerComponent v-if="selectedAnswer[index] !== undefined" :answer="selectedAnswer[index]" />
     </el-row>
-    <el-row class="answer-input-container">
+    <el-row class="answer-input-container" id="input-container">
       <el-input
         class="answer-input"
         placeholder=""
@@ -50,8 +50,8 @@ export default {
     onEnter() {
       const actualQuestion = this.questionsList[this.questionIndex]
       actualQuestion.answers.forEach(answer => {
-        let testAnswer = answer.title.toLowerCase()
-        let userAnswer = this.answer.toLowerCase()
+        let testAnswer = answer.title.toLowerCase().replace(/\s/g, '')
+        let userAnswer = this.answer.toLowerCase().replace(/\s/g, '')
         if (testAnswer === userAnswer) {
           this.scores = answer.scores
           this.selectedAnswer.push(this.answer)
@@ -60,13 +60,21 @@ export default {
           this.houses.h += this.scores.h
           this.houses.r += this.scores.r
           this.houses.s += this.scores.s
+
           this.questionIndex++
-          this.questions.push(this.questionsList[this.questionIndex])
+          if (this.questionsList.length !== this.questionIndex) {
+            this.questions.push(this.questionsList[this.questionIndex])
+          }  else {
+            this.showResults()
+          }
         } else {
           return ''
         }
       })
-    }
+    },
+    showResults() {
+      console.log(this.houses)
+    },
   }
 }
 </script>
