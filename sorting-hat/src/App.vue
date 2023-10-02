@@ -1,5 +1,5 @@
 <template>
-  <el-col id="app">
+  <el-col :xs="24" id="app">
     <SelectionChat />
   </el-col>
 </template>
@@ -34,5 +34,17 @@ body {
   height: 50%;
   overflow-y: scroll;
   overflow-x: hidden
+}
+
+@media (max-width: 600px) {
+  body {
+    display: block
+  }
+
+  #app {
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>
