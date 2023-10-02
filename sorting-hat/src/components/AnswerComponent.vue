@@ -34,6 +34,8 @@ export default {
 .text-border {
   border: solid 1px;
   padding: 10px;
-  border-radius: 30px 30px 30px 0
+  border-radius: 30px 30px 30px 0;
+  background-color: #5e5e5e;
+  color: white
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
   <el-col class="question-container">
-    <el-row class="question"><span class="text-border">{{ question.title }}</span></el-row>
+    <el-row class="question"><span class="text-border title">{{ question.title }}</span></el-row>
     <el-row v-for="answers in question.answers" :key="answers.title">
-      <el-row v-if="question.answers.length > 2" class="answer"><span class="text-border">{{ answers.title }}</span></el-row>
+      <el-row v-if="question.answers.length > 2" class="answer"><span class="text-border answer">{{ answers.title }}</span></el-row>
     </el-row>
   </el-col>
 </template>
@@ -37,6 +37,16 @@ export default {
 .text-border {
   border: solid 1px;
   padding: 10px;
-  border-radius: 30px 30px 0 30px
+  border-radius: 30px 30px 0 30px;
+}
+
+.text-border.title {
+  background-color: #034387;
+  color: white
+}
+
+.text-border.answer {
+  background-color: #535dfc;
+  color: white
 }
 </style>
