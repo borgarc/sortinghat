@@ -1,20 +1,25 @@
 <template>
   <el-col class="selection-chat-container">
-    <el-row v-if="!hasUserName" class="username-container">
-      <UserNameComponent @setUserName="setUserName"/>
+    <el-row v-if="!testOver" class="selection-chat-container">
+      <el-row v-if="!hasUserName && !testOver" class="username-container">
+        <UserNameComponent @setUserName="setUserName"/>
+      </el-row>
+      <el-row v-else class="chat-container" ref="chatContainer" v-for="(question, index) in questions" :key="question.title">
+        <QuestionComponent :question="question"/>
+        <AnswerComponent v-if="selectedAnswer[index] !== undefined" :answer="selectedAnswer[index]" />
+      </el-row>
+      <el-row v-if="hasUserName && !testOver" class="answer-input-container" id="input-container">
+        <el-input
+          class="answer-input"
+          placeholder=""
+          suffix-icon="el-icon-position"
+          v-model="answer"
+          @change="onEnter">
+        </el-input>
+      </el-row>
     </el-row>
-    <el-row v-else class="chat-container" ref="chatContainer" v-for="(question, index) in questions" :key="question.title">
-      <QuestionComponent :question="question"/>
-      <AnswerComponent v-if="selectedAnswer[index] !== undefined" :answer="selectedAnswer[index]" />
-    </el-row>
-    <el-row v-if="hasUserName" class="answer-input-container" id="input-container">
-      <el-input
-        class="answer-input"
-        placeholder=""
-        suffix-icon="el-icon-position"
-        v-model="answer"
-        @change="onEnter">
-      </el-input>
+    <el-row v-else class="result-container">
+      <TestResultComponent :name="username" :house="finalHouse" />
     </el-row>
   </el-col>
 </template>
@@ -24,13 +29,15 @@ import seeds from '../assets/sorting_hat.json'
 import QuestionComponent from '../components/QuestionComponent.vue'
 import AnswerComponent from '../components/AnswerComponent.vue'
 import UserNameComponent from '../components/UserNameComponent.vue'
+import TestResultComponent from '../components/TestResultComponent.vue'
 
 export default {
   name: 'SelectionChat',
   components: {
     QuestionComponent,
     AnswerComponent,
-    UserNameComponent
+    UserNameComponent,
+    TestResultComponent
   },
   mounted() {
     this.questions.push(seeds[0])
@@ -39,6 +46,8 @@ export default {
     return {
       questionsList: seeds,
       hasUserName: false,
+      testOver: false,
+      finalHouse: '',
       username: '',
       questionIndex: 0,
       questions: [],
@@ -46,10 +55,10 @@ export default {
       selectedAnswer: [],
       scores: undefined,
       houses: {
-        g: 0,
-        h: 0,
-        r: 0,
-        s: 0
+        gryffindor: 0,
+        hufflepuff: 0,
+        ravenclaw: 0,
+        slytherin: 0
       }
     }
   },
@@ -63,10 +72,10 @@ export default {
           this.scores = answer.scores
           this.selectedAnswer.push(this.answer)
           this.answer = ''
-          this.houses.g += this.scores.g
-          this.houses.h += this.scores.h
-          this.houses.r += this.scores.r
-          this.houses.s += this.scores.s
+          this.houses.gryffindor += this.scores.g
+          this.houses.hufflepuff += this.scores.h
+          this.houses.ravenclaw += this.scores.r
+          this.houses.slytherin += this.scores.s
 
           this.questionIndex++
           if (this.questionsList.length !== this.questionIndex) {
@@ -80,7 +89,11 @@ export default {
       })
     },
     showResults() {
-      console.log(this.houses)
+      let arr = Object.values(this.houses)
+      let max = Math.max(...arr)
+
+      this.finalHouse = Object.keys(this.houses).find(key => this.houses[key] === max);
+      this.testOver = true
     },
     setUserName(data) {
       this.hasUserName = data.hasUserName
@@ -106,7 +119,7 @@ export default {
   margin: 5px
 }
 
-.username-container {
+.username-container, .result-container {
   display: flex;
   align-items: center;
   justify-content: center;
