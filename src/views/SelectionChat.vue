@@ -1,10 +1,13 @@
 <template>
   <el-col class="selection-chat-container">
-    <el-row class="chat-container" ref="chatContainer" v-for="(question, index) in questions" :key="question.title">
+    <el-row v-if="!hasUserName" class="username-container">
+      <UserNameComponent @setUserName="setUserName"/>
+    </el-row>
+    <el-row v-else class="chat-container" ref="chatContainer" v-for="(question, index) in questions" :key="question.title">
       <QuestionComponent :question="question"/>
       <AnswerComponent v-if="selectedAnswer[index] !== undefined" :answer="selectedAnswer[index]" />
     </el-row>
-    <el-row class="answer-input-container" id="input-container">
+    <el-row v-if="hasUserName" class="answer-input-container" id="input-container">
       <el-input
         class="answer-input"
         placeholder=""
@@ -20,12 +23,14 @@
 import seeds from '../assets/sorting_hat.json'
 import QuestionComponent from '../components/QuestionComponent.vue'
 import AnswerComponent from '../components/AnswerComponent.vue'
+import UserNameComponent from '../components/UserNameComponent.vue'
 
 export default {
   name: 'SelectionChat',
   components: {
     QuestionComponent,
-    AnswerComponent
+    AnswerComponent,
+    UserNameComponent
   },
   mounted() {
     this.questions.push(seeds[0])
@@ -33,6 +38,8 @@ export default {
   data () {
     return {
       questionsList: seeds,
+      hasUserName: false,
+      username: '',
       questionIndex: 0,
       questions: [],
       answer: '',
@@ -75,12 +82,20 @@ export default {
     showResults() {
       console.log(this.houses)
     },
+    setUserName(data) {
+      this.hasUserName = data.hasUserName
+      this.username = data.username
+    }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.selection-chat-container {
+  height: 100%;
+  width: 100%
+}
 .answer-input-container {
   display: flex;
   justify-content: flex-start;
@@ -89,5 +104,12 @@ export default {
 .answer-input {
   width: 40%;
   margin: 5px
+}
+
+.username-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 </style>
