@@ -19,7 +19,7 @@
       </el-row>
     </el-row>
     <el-row v-else class="result-container">
-      <TestResultComponent :name="username" :house="finalHouse" />
+      <TestResultComponent :house="finalHouse" />
     </el-row>
   </el-col>
 </template>

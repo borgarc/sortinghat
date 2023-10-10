@@ -9,10 +9,6 @@
 export default {
   name: 'TestResultComponent',
   props: {
-    name: {
-      type: String,
-      required: true
-    },
     house: {
       type: String,
       required: true
