@@ -66,11 +66,13 @@ export default {
     onEnter() {
       const actualQuestion = this.questionsList[this.questionIndex]
       actualQuestion.answers.forEach(answer => {
-        let testAnswer = answer.title.toLowerCase().replace(/\s/g, '')
-        let userAnswer = this.answer.toLowerCase().replace(/\s/g, '')
+        let testAnswer = answer.letter.toLowerCase().replace(/\s/g, '').replace(/[{)}]/g, '')
+        let userAnswer = this.answer.toLowerCase().replace(/\s/g, '').replace(/[{)}]/g, '')
+        console.log(testAnswer)
+        console.log(userAnswer)
         if (testAnswer === userAnswer) {
           this.scores = answer.scores
-          this.selectedAnswer.push(this.answer)
+          this.selectedAnswer.push(answer.title)
           this.answer = ''
           this.houses.gryffindor += this.scores.g
           this.houses.hufflepuff += this.scores.h
