@@ -1,8 +1,6 @@
 <template>
   <el-col class="test-result-container">
-    <div><span>{{ name }}</span> <span>WELCOME TO</span></div>
-    <img class="image" :src="`@/assets/images/${house}.jpg`" />
-    <span>{{ house }}</span>
+    <img class="image" :src="require(`@/assets/images/${house}.png`)" />
   </el-col>
 </template>
 
@@ -26,15 +24,26 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .image {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .test-result-container {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .test-result-container {
+    width: 100%;
+  }
+
+  .container {
+    display: none;
+  }
 }
 
 </style>
