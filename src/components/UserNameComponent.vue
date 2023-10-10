@@ -27,7 +27,7 @@ export default {
       username: '',
       introduction1: 'Hello little one.',
       introduction2: 'we are going to ask you some questions to choose your schools house.',
-      introduction3: 'Please anwers the questions choosing the letter of your answer choice.',
+      introduction3: 'Please answer the questions choosing the letter of your answer choice.',
       introduction4: 'So... whats your name little wizzard?'
     }
   },
