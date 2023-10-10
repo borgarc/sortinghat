@@ -29,11 +29,8 @@ body {
 }
 
 #app {
-  border: solid 1px;
   width: 50%;
   height: 50%;
-  overflow-y: scroll;
-  overflow-x: hidden
 }
 
 @media (max-width: 600px) {
@@ -42,7 +39,6 @@ body {
   }
 
   #app {
-    border: none;
     width: 100%;
     height: 100%;
   }
