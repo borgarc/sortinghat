@@ -1,10 +1,7 @@
 <template>
   <el-col class="test-result-container">
     <div><span>{{ name }}</span> <span>WELCOME TO</span></div>
-    <img v-if="house === 'gryffindor'" class="image" src="../assets/images/gryffindor.jpg" />
-    <img v-if="house === 'hufflepuff'" class="image" src="../assets/images/hufflepuff.jpg" />
-    <img v-if="house === 'ravenclaw'" class="image" src="../assets/images/ravenclaw.jpg" />
-    <img v-if="house === 'slytherin'" class="image" src="../assets/images/slytherin.jpg" />
+    <img class="image" :src="`../assets/images/${house}.jpg`" />
     <span>{{ house }}</span>
   </el-col>
 </template>
