@@ -25,11 +25,11 @@
 </template>
 
 <script>
-import seeds from '../assets/sorting_hat.json'
-import QuestionComponent from '../components/QuestionComponent.vue'
-import AnswerComponent from '../components/AnswerComponent.vue'
-import UserNameComponent from '../components/UserNameComponent.vue'
-import TestResultComponent from '../components/TestResultComponent.vue'
+import seeds from '@/assets/sorting_hat.json'
+import QuestionComponent from '@/components/QuestionComponent.vue'
+import AnswerComponent from '@/components/AnswerComponent.vue'
+import UserNameComponent from '@/components/UserNameComponent.vue'
+import TestResultComponent from '@/components/TestResultComponent.vue'
 
 export default {
   name: 'SelectionChat',
@@ -107,8 +107,10 @@ export default {
 <style scoped>
 .selection-chat-container {
   height: 100%;
-  width: 100%
+  width: 100%;
+  overflow: auto
 }
+
 .answer-input-container {
   display: flex;
   justify-content: flex-start;

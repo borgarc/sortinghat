@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import SelectionChat from './views/SelectionChat.vue'
+import SelectionChat from '@/views/SelectionChat.vue'
 
 export default {
   name: 'App',
@@ -19,6 +19,7 @@ export default {
 html, body {
   width: 100%;
   height: 100%;
+  background-image: url('@/assets/images/greathall.webp');
 }
 
 body {
