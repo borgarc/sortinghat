@@ -4,6 +4,7 @@
         "answers": [
             {
                 "title": "Dawn",
+                "letter" : "a) ",
                 "scores": {
                     "g": 100,
                     "r": 100,
@@ -13,6 +14,7 @@
             },
             {
                 "title": "Dusk",
+                "letter" : "b) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -27,6 +29,7 @@
         "answers": [
             {
                 "title": "Forest",
+                "letter" : "a) ",
                 "scores": {
                     "g": 100,
                     "r": 100,
@@ -36,6 +39,7 @@
             },
             {
                 "title": "River",
+                "letter" : "b) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -50,6 +54,7 @@
         "answers": [
             {
                 "title": "Moon",
+                "letter" : "a) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -59,6 +64,7 @@
             },
             {
                 "title": "Stars",
+                "letter" : "b) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -73,6 +79,7 @@
         "answers": [
             {
                 "title": "Ordinary",
+                "letter" : "a) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -82,6 +89,7 @@
             },
             {
                 "title": "Ignorant",
+                "letter" : "b) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -91,6 +99,7 @@
             },
             {
                 "title": "Cowardly",
+                "letter" : "c) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -100,6 +109,7 @@
             },
             {
                 "title": "Selfish",
+                "letter" : "d) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -114,6 +124,7 @@
         "answers": [
             {
                 "title": "Miss you, but smile",
+                "letter" : "a) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -123,6 +134,7 @@
             },
             {
                 "title": "Ask for more stories about your adventures",
+                "letter" : "b) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -132,6 +144,7 @@
             },
             {
                 "title": "Think with admiration of your achievements",
+                "letter" : "c) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -141,6 +154,7 @@
             },
             {
                 "title": "I don't care what people think of me after I'm dead, it's what they think of me while I'm alive that counts",
+                "letter" : "d) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -155,6 +169,7 @@
         "answers": [
             {
                 "title": "The Wise",
+                "letter" : "a) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -164,6 +179,7 @@
             },
             {
                 "title": "The Good",
+                "letter" : "b) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -173,6 +189,7 @@
             },
             {
                 "title": "The Great",
+                "letter" : "c) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -182,6 +199,7 @@
             },
             {
                 "title": "The Bold",
+                "letter" : "d) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -196,6 +214,7 @@
         "answers": [
             {
                 "title": "Love?",
+                "letter" : "a) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -205,6 +224,7 @@
             },
             {
                 "title": "Glory?",
+                "letter" : "b) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -214,6 +234,7 @@
             },
             {
                 "title": "Wisdom?",
+                "letter" : "c) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -223,6 +244,7 @@
             },
             {
                 "title": "Power?",
+                "letter" : "d) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -237,6 +259,7 @@
         "answers": [
             {
                 "title": "A crackling log fire",
+                "letter" : "a) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -246,6 +269,7 @@
             },
             {
                 "title": "The sea",
+                "letter" : "b) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -255,6 +279,7 @@
             },
             {
                 "title": "Fresh parchment",
+                "letter" : "c) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -264,6 +289,7 @@
             },
             {
                 "title": "Home",
+                "letter" : "d) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -278,6 +304,7 @@
         "answers": [
             {
                 "title": "The foaming, frothing, silvery liquid that sparkles as though containing ground diamonds.",
+                "letter" : "a) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -287,6 +314,7 @@
             },
             {
                 "title": "The smooth, thick, richly purple drink that gives off a delicious smell of chocolate and plums.",
+                "letter" : "b) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -296,6 +324,7 @@
             },
             {
                 "title": "The golden liquid so bright that it hurts the eye, and which makes sunspots dance all around the room.",
+                "letter" : "c) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -305,6 +334,7 @@
             },
             {
                 "title": "The mysterious black liquid that gleams like ink, and gives off fumes that make you see strange visions.",
+                "letter" : "d) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -319,6 +349,7 @@
         "answers": [
             {
                 "title": "The violin",
+                "letter" : "a) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -328,6 +359,7 @@
             },
             {
                 "title": "The trumpet",
+                "letter" : "b) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -337,6 +369,7 @@
             },
             {
                 "title": "The piano",
+                "letter" : "c) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -346,6 +379,7 @@
             },
             {
                 "title": "The drum",
+                "letter" : "d) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -360,6 +394,7 @@
         "answers": [
             {
                 "title": "The silver leafed tree bearing golden apples",
+                "letter" : "a) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -369,6 +404,7 @@
             },
             {
                 "title": "The fat red toadstools that appear to be talking to each other",
+                "letter" : "b) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -378,6 +414,7 @@
             },
             {
                 "title": "The bubbling pool, in the depths of which something luminous is swirling",
+                "letter" : "c) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -387,6 +424,7 @@
             },
             {
                 "title": "The statue of an old wizard with a strangely twinkling eye",
+                "letter" : "d) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -401,6 +439,7 @@
         "answers": [
             {
                 "title": "The small tortoiseshell box, embellished with gold, inside which some small creature seems to be squeaking.",
+                "letter" : "a) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -410,6 +449,7 @@
             },
             {
                 "title": "The gleaming jet black box with a silver lock and key, marked with a mysterious rune that you know to be the mark of Merlin.",
+                "letter" : "b) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -419,6 +459,7 @@
             },
             {
                 "title": "The ornate golden casket, standing on clawed feet, whose inscription warns that both secret knowledge and unbearable temptation lie within.",
+                "letter" : "c) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -428,6 +469,7 @@
             },
             {
                 "title": "The small pewter box, unassuming and plain, with a scratched message upon it that reads \u2018I open only for the worthy.'",
+                "letter" : "d) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -442,6 +484,7 @@
         "answers": [
             {
                 "title": "First, a nearly perfected cure for dragon pox. Then student records going back 1000 years. Finally, a mysterious handwritten book full of strange runes.",
+                "letter" : "a) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -451,6 +494,7 @@
             },
             {
                 "title": "First, student records going back 1000 years. Then a mysterious handwritten book full of strange runes. Finally, a nearly perfected cure for dragon pox.",
+                "letter" : "b) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -460,6 +504,7 @@
             },
             {
                 "title": "First, a mysterious handwritten book full of strange runes. Then a nearly perfected cure for dragon pox. Finally, student records going back 1000 years.",
+                "letter" : "c) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -469,6 +514,7 @@
             },
             {
                 "title": "First, a nearly perfected cure for dragon pox. Then a mysterious handwritten book full of strange runes. Finally, student records going back 1000 years.",
+                "letter" : "d) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -478,6 +524,7 @@
             },
             {
                 "title": "First student records going back 1000 years. Then, a nearly perfected cure for dragon pox. Finally, a mysterious handwritten book full of strange runes.",
+                "letter" : "e) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -487,6 +534,7 @@
             },
             {
                 "title": "First,  a mysterious handwritten book full of strange runes. Then student records going back 1000 years. Finally, a nearly perfected cure for dragon pox.",
+                "letter" : "f) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -501,6 +549,7 @@
         "answers": [
             {
                 "title": "Hunger",
+                "letter" : "a) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -510,6 +559,7 @@
             },
             {
                 "title": "Cold",
+                "letter" : "b) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -519,6 +569,7 @@
             },
             {
                 "title": "Loneliness",
+                "letter" : "c) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -528,6 +579,7 @@
             },
             {
                 "title": "Boredom",
+                "letter" : "d) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -537,6 +589,7 @@
             },
             {
                 "title": "Being ignored",
+                "letter" : "e) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -551,6 +604,7 @@
         "answers": [
             {
                 "title": "Envied?",
+                "letter" : "a) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -560,6 +614,7 @@
             },
             {
                 "title": "Imitated?",
+                "letter" : "b) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -569,6 +624,7 @@
             },
             {
                 "title": "Trusted?",
+                "letter" : "c) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -578,6 +634,7 @@
             },
             {
                 "title": "Praised?",
+                "letter" : "d) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -587,6 +644,7 @@
             },
             {
                 "title": "Liked?",
+                "letter" : "e) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -596,6 +654,7 @@
             },
             {
                 "title": "Feared?",
+                "letter" : "f) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -610,6 +669,7 @@
         "answers": [
             {
                 "title": "The power to read minds",
+                "letter" : "a) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -619,6 +679,7 @@
             },
             {
                 "title": "The power of invisibility",
+                "letter" : "b) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -628,6 +689,7 @@
             },
             {
                 "title": "The power of superhuman strength",
+                "letter" : "c) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -637,6 +699,7 @@
             },
             {
                 "title": "The power to speak to animals",
+                "letter" : "d) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -646,6 +709,7 @@
             },
             {
                 "title": "The power to change the past",
+                "letter" : "e) ",
                 "scores": {
                     "g": 50,
                     "r": 0,
@@ -655,6 +719,7 @@
             },
             {
                 "title": "The power to change your appearance at will",
+                "letter" : "f) ",
                 "scores": {
                     "g": 50,
                     "r": 100,
@@ -669,6 +734,7 @@
         "answers": [
             {
                 "title": "Apparition and Disapparition (being able to materialize and dematerialize at will)",
+                "letter" : "a) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -678,6 +744,7 @@
             },
             {
                 "title": "Transfiguration (turning one object into another object)",
+                "letter" : "b) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -687,6 +754,7 @@
             },
             {
                 "title": "Flying on a broomstick",
+                "letter" : "c) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -696,6 +764,7 @@
             },
             {
                 "title": "Hexes and jinxes",
+                "letter" : "d) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -705,6 +774,7 @@
             },
             {
                 "title": "All about magical creatures, and how to befriend/care for them",
+                "letter" : "e) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -714,6 +784,7 @@
             },
             {
                 "title": "Secrets about the castle",
+                "letter" : "f) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -723,6 +794,7 @@
             },
             {
                 "title": "Every area of magic I can",
+                "letter" : "g) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -737,6 +809,7 @@
         "answers": [
             {
                 "title": "Centaurs",
+                "letter" : "a) ",
                 "scores": {
                     "g": 100,
                     "r": 100,
@@ -746,6 +819,7 @@
             },
             {
                 "title": "Goblins",
+                "letter" : "b) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -755,6 +829,7 @@
             },
             {
                 "title": "Merpeople",
+                "letter" : "c) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -764,6 +839,7 @@
             },
             {
                 "title": "Ghosts",
+                "letter" : "d) ",
                 "scores": {
                     "g": 100,
                     "r": 100,
@@ -773,6 +849,7 @@
             },
             {
                 "title": "Vampires",
+                "letter" : "e) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -782,6 +859,7 @@
             },
             {
                 "title": "Werewolves",
+                "letter" : "f) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -791,6 +869,7 @@
             },
             {
                 "title": "Trolls",
+                "letter" : "g) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -805,6 +884,7 @@
         "answers": [
             {
                 "title": "Attempt to confuse the troll into letting all three of you pass without fighting?",
+                "letter" : "a) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -814,6 +894,7 @@
             },
             {
                 "title": "Suggest drawing lots to decide which of you will fight?",
+                "letter" : "b) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -823,6 +904,7 @@
             },
             {
                 "title": "Suggest that all three of you should fight (without telling the troll)?",
+                "letter" : "c) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -832,6 +914,7 @@
             },
             {
                 "title": "Volunteer to fight?",
+                "letter" : "d) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -846,6 +929,7 @@
         "answers": [
             {
                 "title": "Lie and say you don't know (but hope that somebody else tells Professor Flitwick the truth).",
+                "letter" : "a) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -855,6 +939,7 @@
             },
             {
                 "title": "Tell Professor Flitwick that he ought to ask your classmate (and resolve to tell your classmate that if he doesn't tell the truth, you will).",
+                "letter" : "b) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -864,6 +949,7 @@
             },
             {
                 "title": "Tell Professor Flitwick the truth.  If your classmate is prepared to win by cheating, he deserves to be found out.  Also, as you are both in the same house, any points he loses will be regained by you, for coming first in his place.",
+                "letter" : "c) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -873,6 +959,7 @@
             },
             {
                 "title": "You would not wait to be asked to tell Professor Flitwick the truth.  If you knew that somebody was using a forbidden quill, you would tell the teacher before the exam started.",
+                "letter" : "d) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -887,6 +974,7 @@
         "answers": [
             {
                 "title": "Ask what makes them think so?",
+                "letter" : "a) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -896,6 +984,7 @@
             },
             {
                 "title": "Agree, and ask whether they'd like a free sample of a jinx?",
+                "letter" : "b) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -905,6 +994,7 @@
             },
             {
                 "title": "Agree, and walk away, leaving them to wonder whether you are bluffing?",
+                "letter" : "c) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -914,6 +1004,7 @@
             },
             {
                 "title": "Tell them that you are worried about their mental health, and offer to call a doctor.",
+                "letter" : "d) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -928,6 +1019,7 @@
         "answers": [
             {
                 "title": "Standing on top of something very high and realizing suddenly that there are no hand- or footholds, nor any barrier to stop you falling.",
+                "letter" : "a) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -937,6 +1029,7 @@
             },
             {
                 "title": "An eye at the keyhole of the dark, windowless room in which you are locked.",
+                "letter" : "b) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -946,6 +1039,7 @@
             },
             {
                 "title": "Waking up to find that neither your friends nor your family have any idea who you are.",
+                "letter" : "c) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -955,6 +1049,7 @@
             },
             {
                 "title": "Being forced to speak in such a silly voice that hardly anyone can   understand you, and everyone laughs at you.",
+                "letter" : "d) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -969,6 +1064,7 @@
         "answers": [
             {
                 "title": "The wide, sunny, grassy lane",
+                "letter" : "a) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -978,6 +1074,7 @@
             },
             {
                 "title": "The narrow, dark, lantern-lit alley",
+                "letter" : "b) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -987,6 +1084,7 @@
             },
             {
                 "title": "The twisting, leaf-strewn path through woods",
+                "letter" : "c) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -996,6 +1094,7 @@
             },
             {
                 "title": "The cobbled street lined with ancient buildings",
+                "letter" : "d) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -1010,6 +1109,7 @@
         "answers": [
             {
                 "title": "Proceed with caution, keeping one hand on your concealed wand and an eye out for any disturbance?",
+                "letter" : "a) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -1019,6 +1119,7 @@
             },
             {
                 "title": "Draw your wand and try to discover the source of the noise?",
+                "letter" : "b) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -1028,6 +1129,7 @@
             },
             {
                 "title": "Draw your wand and stand your ground?",
+                "letter" : "c) ",
                 "scores": {
                     "g": 0,
                     "r": 0,
@@ -1037,6 +1139,7 @@
             },
             {
                 "title": "Withdraw into the shadows to await developments, while mentally reviewing the most appropriate defensive and offensive spells, should trouble occur?",
+                "letter" : "d) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -1051,6 +1154,7 @@
         "answers": [
             {
                 "title": "Tabby cat",
+                "letter" : "a) ",
                 "scores": {
                     "g": 50,
                     "r": 0,
@@ -1060,6 +1164,7 @@
             },
             {
                 "title": "Siamese cat",
+                "letter" : "b) ",
                 "scores": {
                     "g": 25,
                     "r": 0,
@@ -1069,6 +1174,7 @@
             },
             {
                 "title": "Ginger cat",
+                "letter" : "c) ",
                 "scores": {
                     "g": 25,
                     "r": 0,
@@ -1078,6 +1184,7 @@
             },
             {
                 "title": "Black cat",
+                "letter" : "d) ",
                 "scores": {
                     "g": 25,
                     "r": 0,
@@ -1087,6 +1194,7 @@
             },
             {
                 "title": "White cat",
+                "letter" : "e) ",
                 "scores": {
                     "g": 25,
                     "r": 0,
@@ -1096,6 +1204,7 @@
             },
             {
                 "title": "Tawny owl",
+                "letter" : "f) ",
                 "scores": {
                     "g": 25,
                     "r": 100,
@@ -1105,6 +1214,7 @@
             },
             {
                 "title": "Screech owl",
+                "letter" : "g) ",
                 "scores": {
                     "g": 25,
                     "r": 100,
@@ -1114,6 +1224,7 @@
             },
             {
                 "title": "Brown owl",
+                "letter" : "h) ",
                 "scores": {
                     "g": 25,
                     "r": 100,
@@ -1123,6 +1234,7 @@
             },
             {
                 "title": "Snowy owl",
+                "letter" : "i) ",
                 "scores": {
                     "g": 25,
                     "r": 50,
@@ -1132,6 +1244,7 @@
             },
             {
                 "title": "Barn owl",
+                "letter" : "j) ",
                 "scores": {
                     "g": 25,
                     "r": 100,
@@ -1141,6 +1254,7 @@
             },
             {
                 "title": "Common toad",
+                "letter" : "k) ",
                 "scores": {
                     "g": 25,
                     "r": 0,
@@ -1150,6 +1264,7 @@
             },
             {
                 "title": "Natterjack toad",
+                "letter" : "l) ",
                 "scores": {
                     "g": 25,
                     "r": 0,
@@ -1159,6 +1274,7 @@
             },
             {
                 "title": "Dragon toad",
+                "letter" : "m) ",
                 "scores": {
                     "g": 50,
                     "r": 0,
@@ -1168,6 +1284,7 @@
             },
             {
                 "title": "Harlequin toad",
+                "letter" : "n) ",
                 "scores": {
                     "g": 25,
                     "r": 0,
@@ -1177,6 +1294,7 @@
             },
             {
                 "title": "Three toed tree toad",
+                "letter" : "o) ",
                 "scores": {
                     "g": 25,
                     "r": 50,
@@ -1191,6 +1309,7 @@
         "answers": [
             {
                 "title": "Black",
+                "letter" : "a) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -1200,6 +1319,7 @@
             },
             {
                 "title": "White",
+                "letter" : "b) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -1214,6 +1334,7 @@
         "answers": [
             {
                 "title": "Heads",
+                "letter" : "a) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -1223,6 +1344,7 @@
             },
             {
                 "title": "Tails",
+                "letter" : "b) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
@@ -1237,6 +1359,7 @@
         "answers": [
             {
                 "title": "Left",
+                "letter" : "a) ",
                 "scores": {
                     "g": 0,
                     "r": 100,
@@ -1246,6 +1369,7 @@
             },
             {
                 "title": "Right",
+                "letter" : "b) ",
                 "scores": {
                     "g": 100,
                     "r": 0,
