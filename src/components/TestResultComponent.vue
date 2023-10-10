@@ -1,7 +1,7 @@
 <template>
   <el-col class="test-result-container">
     <div><span>{{ name }}</span> <span>WELCOME TO</span></div>
-    <img class="image" :src="`../assets/images/${house}.jpg`" />
+    <img class="image" :src="`@/assets/images/${house}.jpg`" />
     <span>{{ house }}</span>
   </el-col>
 </template>
