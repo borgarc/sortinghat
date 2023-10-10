@@ -2,7 +2,7 @@
   <el-col class="question-container">
     <el-row class="question"><span class="text-border title">{{ question.title }}</span></el-row>
     <el-row v-for="answers in question.answers" :key="answers.title">
-      <el-row v-if="question.answers.length > 2" class="answer"><span class="text-border answer">{{ answers.title }}</span></el-row>
+      <el-row class="answer"><span class="text-border answer">{{ answers.letter }}{{ answers.title }}</span></el-row>
     </el-row>
   </el-col>
 </template>
