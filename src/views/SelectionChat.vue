@@ -16,6 +16,7 @@
           v-model="answer"
           @change="onEnter">
         </el-input>
+        <div id="scrollToMe"></div>
       </el-row>
     </el-row>
     <el-row v-else class="result-container">
@@ -68,8 +69,7 @@ export default {
       actualQuestion.answers.forEach(answer => {
         let testAnswer = answer.letter.toLowerCase().replace(/\s/g, '').replace(/[{)}]/g, '')
         let userAnswer = this.answer.toLowerCase().replace(/\s/g, '').replace(/[{)}]/g, '')
-        console.log(testAnswer)
-        console.log(userAnswer)
+
         if (testAnswer === userAnswer) {
           this.scores = answer.scores
           this.selectedAnswer.push(answer.title)
@@ -89,6 +89,8 @@ export default {
           return ''
         }
       })
+      setTimeout(()=> { this.scrollToElement() }, 5)
+
     },
     showResults() {
       let arr = Object.values(this.houses)
@@ -100,6 +102,13 @@ export default {
     setUserName(data) {
       this.hasUserName = data.hasUserName
       this.username = data.username
+    },
+    scrollToElement() {
+      const el = document.getElementById('scrollToMe');
+
+      if (el) {
+        el.scrollIntoView({behavior: 'smooth'});
+      }
     }
   }
 }
