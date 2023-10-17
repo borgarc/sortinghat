@@ -5,8 +5,8 @@
         <UserNameComponent @setUserName="setUserName"/>
       </el-row>
       <el-row v-else class="chat-container" ref="chatContainer" v-for="(question, index) in questions" :key="question.title">
-        <QuestionComponent :question="question"/>
-        <AnswerComponent v-if="selectedAnswer[index] !== undefined" :answer="selectedAnswer[index]" />
+        <QuestionComponent :question="question" :willShow="true"/>
+        <AnswerComponent v-if="selectedAnswer[index] !== undefined" :answer="selectedAnswer[index]" :willShow="true" />
       </el-row>
       <el-row v-if="hasUserName && !testOver" class="answer-input-container" id="input-container">
         <el-input
@@ -89,7 +89,7 @@ export default {
           return ''
         }
       })
-      setTimeout(()=> { this.scrollToElement() }, 5)
+      setTimeout(()=> { this.scrollToElement() }, 700)
 
     },
     showResults() {

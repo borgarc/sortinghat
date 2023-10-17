@@ -1,8 +1,16 @@
 <template>
   <el-col class="question-container">
-    <el-row class="question"><span class="text-border title">{{ question.title }}</span></el-row>
+    <el-row class="question">
+      <Transition name="bounce">
+        <span v-show="show" class="text-border title">{{ question.title }}</span>
+      </Transition>
+    </el-row>
     <el-row v-for="answers in question.answers" :key="answers.title">
-      <el-row class="answer"><span class="text-border answer">{{ answers.letter }}{{ answers.title }}</span></el-row>
+      <el-row class="answer">
+        <Transition name="bounce">
+          <span v-if="show" class="text-border answer">{{ answers.letter }}{{ answers.title }}</span>
+        </Transition>
+      </el-row>
     </el-row>
   </el-col>
 </template>
@@ -15,8 +23,20 @@ export default {
     question: {
       type: Object,
       required: true,
+    },
+    willShow: {
+      type: Boolean,
+      required: true,
+    },
+  },
+  data () {
+    return {
+      show: false
     }
   },
+  mounted () {
+    setTimeout(()=> { this.show = this.willShow }, 500)
+  }
 }
 </script>
 
@@ -48,5 +68,23 @@ export default {
 .text-border.answer {
   background-color: #535dfc;
   color: white
+}
+
+.bounce-enter-active {
+  animation: bounce-in 0.5s;
+}
+.bounce-leave-active {
+  animation: bounce-in 0.5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 </style>
