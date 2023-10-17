@@ -34,9 +34,14 @@ body {
   height: 50%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1220px) {
   body {
-    display: block
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('@/assets/images/greathall.webp');
+    background-position: center;
+    background-size: cover;
   }
 
   #app {
